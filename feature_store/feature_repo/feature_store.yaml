@@ -3,10 +3,18 @@ project: feature_store
 registry: data/registry.db
 # The provider primarily specifies default offline / online stores & storing the registry in a given cloud
 provider: local
+offline_store:
+  type: postgres
+  host: localhost
+  port: 5432
+  database: feature_store_db
+  user: postgres
+  password: password
+  sslmode: disable
 online_store:
-    type: sqlite
-    path: data/online_store.db
+  type: redis
+  connection_string: "localhost:6379"
 entity_key_serialization_version: 3
 # By default, no_auth for authentication and authorization, other possible values kubernetes and oidc. Refer the documentation for more details.
 auth:
-    type: no_auth
+  type: no_auth

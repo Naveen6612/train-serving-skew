@@ -1,0 +1,58 @@
+
+f
+G
+customer_idUnique customer identifier"customer_idJfeature_store
+Ö˜íÖà›¨ñ°ˆîÖÈš¹
+C
+$
+__dummy"
+__dummy_idJfeature_store
+Ö˜íÖØ®ëğ°ˆîÖæ• 1"$34fed451-5da3-46d3-9cfa-10cd393cb353*½ˆîÖÀÏÿ²2 
+Â
+ecommerce_featuresfeature_storecustomer_id"
+
+amount"
+quantity2€†°–:Ñevent_timestamp*created_timestamp‚Œ
+‰{"name": "ecommerce_transactions_source", "query": "\n        SELECT \n            CAST(TRUNC(\"CustomerNo\") AS TEXT) AS customer_id,\n            \"Price\" AS amount,\n            \"Quantity\" AS quantity,\n            \"Date\" AS event_timestamp,\n            \"Date\" AS created_timestamp \n        FROM ecommerce_transactions\n        WHERE \"CustomerNo\" IS NOT NULL\n    ", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢ecommerce_transactions_source’Ö˜íÖğ¢­–"°ˆîÖ¨¹@b
+customer_id’latestY
+Ö˜íÖ°¢®ğ½ˆîÖ ¥Ù²
+÷Ï’Ó€°îS€òÖÊ
+€òÖÊ€ÇêÖ
+€Ûªá€ÇêÖ0báevent_timestamp*created_timestamp‚Œ
+‰{"name": "ecommerce_transactions_source", "query": "\n        SELECT \n            CAST(TRUNC(\"CustomerNo\") AS TEXT) AS customer_id,\n            \"Price\" AS amount,\n            \"Quantity\" AS quantity,\n            \"Date\" AS event_timestamp,\n            \"Date\" AS created_timestamp \n        FROM ecommerce_transactions\n        WHERE \"CustomerNo\" IS NOT NULL\n    ", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢ecommerce_transactions_sourceªfeature_store’Ö˜íÖğ¢­–"°ˆîÖ¨¹Š.
+
+feature_store
+Ö˜íÖ Ô¬°ˆîÖÈ‘’ò
+
+ecommerce_featuresfeature_store"feature_view*¨
+‡
+ecommerce_featuresfeature_storecustomer_id"
+
+amount"
+quantity2€ÎÚ:˜event_timestamp*created_timestamp‚Ò
+Ï{"name": "ecommerce_transactions_source", "query": "SELECT customer_id, amount, quantity, transaction_date AS event_timestamp, transaction_date AS created_timestamp FROM ecommerce_transactions", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢ecommerce_transactions_source’Ö˜íÖğ¢­–"Ö˜íÖ ñï@b
+
+CustomerNo’latest
+Ö˜íÖ°¢®ğÖ˜íÖ°¢®ğ2Ö˜íÖØ®ëğB$5d0ece46-19f2-44cf-9396-351d718767b9
+
+ecommerce_featuresfeature_store"feature_view*¦
+ƒ
+ecommerce_featuresfeature_storecustomer_id"
+
+amount"
+quantity2€ÎÚ:“event_timestamp*created_timestamp‚Í
+Ê{"name": "ecommerce_transactions_source", "query": "\n        SELECT \n            CAST(\"CustomerNo\" AS BIGINT) AS customer_id,\n            Price AS amount,\n            Quantity AS quantity,\n            Date AS event_timestamp,\n            Date AS created_timestamp \n        FROM ecommerce_transactions\n    ", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢ecommerce_transactions_source’Ö˜íÖğ¢­–"ŞœíÖè´ËÜ@b
+customer_id’latest
+Ö˜íÖ°¢®ğŞœíÖÈØˆİ 2ŞœíÖ¨éİB$b1f0d379-a987-4439-87d6-599a215b1cb5
+É
+ecommerce_featuresfeature_store"feature_view*ß
+“
+ecommerce_featuresfeature_storecustomer_id"
+
+amount"
+quantity2€ÎÚ:£event_timestamp*created_timestamp‚İ
+Ú{"name": "ecommerce_transactions_source", "query": "\n        SELECT \n            CAST(\"CustomerNo\" AS BIGINT) AS customer_id,\n            \"Price\" AS amount,\n            \"Quantity\" AS quantity,\n            \"Date\" AS event_timestamp,\n            \"Date\" AS created_timestamp \n        FROM ecommerce_transactions\n    ", "table": ""}ŠZfeast.infra.offline_stores.contrib.postgres_offline_store.postgres_source.PostgreSQLSource¢ecommerce_transactions_source’¶…îÖÕ®Ù"¶…îÖÈ›¢æ@b
+customer_id’latestG
+Ö˜íÖ°¢®ğ¶…îÖÈ›¢æ
+÷Ï’Ó€°îS€òÖÊ
+€òÖÊ€ÇêÖ 2¶…îÖÈÁ¼çB$fb9d6fde-dde7-4610-bf18-a1e9224d1801
